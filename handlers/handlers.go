@@ -63,7 +63,6 @@ func UpdateTodoHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	update := bson.M{
-		"user_id":     todo.UserID,
 		"title":       todo.Title,
 		"description": todo.Description,
 	}

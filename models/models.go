@@ -5,8 +5,7 @@ import (
 )
 
 type Todo struct {
-	ID          primitive.ObjectID `bson:"_id,omitempty"`
-	UserID      string             `bson:"user_id"`
-	Title       string             `bson:"title"`
-	Description string             `bson:"description"`
+	ID          primitive.ObjectID `json:"id" bson:"_id,omitempty"`
+	Title       string             `json:"title" bson:"title"`
+	Description string             `json:"description" bson:"description"`
 }
